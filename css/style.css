@@ -7,10 +7,6 @@
     font-family: "Noto Sans Sinhala";
 }
 
-/* html {
-    font-size: 62.5%;
-} */
-
 :root {
     --theme-color: #7F0F0E;
     --border-color: #646263;
@@ -21,7 +17,7 @@
 }
 
 html {
-    color: var(--black);
+    color: var(--black) !important;
 }
 
 .call-us {
@@ -86,6 +82,10 @@ html {
     color: #08325C;
 }
 
+.middle-part .paragraph {
+    color: #000;
+}
+
 label {
     font-size: .8rem !important;
     font-weight: 600;
@@ -127,4 +127,101 @@ button {
     font-weight: 600;
     color: var(--nav-link);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.main-heading {
+    color: var(--border-color);
+
+    &>span {
+        color: var(--btn-color);
+    }
+}
+
+.sub-heading {
+    color: var(--btn-color);
+}
+
+.paragraph {
+    color: var(--border-color);
+}
+
+.content img {
+    width: 75%;
+    height: auto;
+}
+
+.button-show {
+    width: 75%;
+    border-color: var(--border-color) !important;
+    border-width: 2px !important;
+}
+
+.button-show button {
+    background-color: var(--btn-color);
+    color: var(--nav-link);
+
+    &>img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.box-2--top---img {
+    width: 45%;
+    height: auto;
+}
+
+.box-2--bottom---img {
+    width: 70%;
+    height: auto;
+}
+
+:is(.box-2--top, .box-2--bottom) .button-show {
+    width: 100%;
+}
+
+.border-start,
+.border-bottom,
+.border-end {
+    border-color: var(--btn-active) !important;
+    border-width: 1px !important;
+}
+
+.link-content {
+    width: 100%;
+    color: var(--nav-link);
+    background-color: #838383;
+
+    & a {
+        text-decoration: none;
+        color: var(--nav-link);
+    }
+}
+
+.menu-link {
+    & .image {
+        height: auto;
+        width: 3%;
+    }
+}
+
+.draft ul li {
+    list-style-type: none;
+    opacity: 20%;
+}
+
+.middle-content p {
+    color: gray;
+}
+
+.review p {
+    line-height: 1.2rem !important;
+}
+
+.review .container-button .button-show {
+    width: 100%;
+}
+
+.social-links .border-bottom {
+    border-width: 2px !important;
 }

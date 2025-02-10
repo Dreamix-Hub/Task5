@@ -17,16 +17,17 @@
   <body>
     <!-- top header -->
     <header>
-      <section class="container-fluid ps-0">
+      <section class="container-fluid ps-0 pe-0 pe-md-0">
         <div
-          class="container d-flex justify-content-between align-items-center"
+          class="d-flex justify-content-between align-items-center flex-sm-row flex-column ps-xl-0 gap-sm-5"
         >
           <div class="logo">
             <img class="img-fluid" src="images/logo.png" alt="" />
           </div>
-          <div class="right-content text-center">
-            <p class="call-us fs-5 fw-bolder mb-0">CALL OUR OFFICES NOW!</p>
-            <h2 class="number fs-1 fw-bolder mb-0">540.433.6906</h2>
+
+          <div class="right-content text-center px-xl-3 px-lg-4 px-md-5">
+            <p class="call-us fw-bolder mb-0">CALL OUR OFFICES NOW!</p>
+            <h2 class="number fw-bolder mb-0">540.433.6906</h2>
             <p class="get-answer fw-bolder mb-0">
               Get Your Questions Answered Fast
             </p>
@@ -50,27 +51,27 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-xl-end justify-content-lg-center"
             id="navbarTogglerDemo02"
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 text-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">HOME</a>
+                <a class="nav-link" href="#">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">BIOGRAPHY</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">BLOG</a>
+                <a class="nav-link" href="#">BLOG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">AREAS WE SERVE</a>
+                <a class="nav-link" href="#">AREAS WE SERVE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">LIBRARY</a>
+                <a class="nav-link" href="#">LIBRARY</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">CONTACT</a>
+                <a class="nav-link" href="#">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -81,57 +82,63 @@
     <main>
       <section class="container-fluid">
         <div class="section-hero container my-4">
-          <div class="row">
-            <div class="section-hero--left col-lg-6"></div>
-            <div class="col-lg-6">
-              <div class="section-hero--right">
+          <div class="hero-boxes d-grid gap-3">
+            <div class="section-hero--left"></div>
+            <div class="section-hero--right">
+              <div class="">
                 <!-- question start -->
                 <div
-                  class="questions d-flex justify-content-start align-items-start gap-3"
+                  class="questions d-flex justify-content-start align-items-start flex-sm-row flex-column gap-sm-3 gap-0"
                 >
-                  <div class="question-left fs-2">
-                    <p class="px-2">QUESTIONS?</p>
+                  <div class="question-left">
+                    <p class="px-1 mb-0 d-inline-block">QUESTIONS?</p>
                   </div>
                   <div class="question-right">
-                    <p class="fs-5 fw-bold px-3 lh-sm mb-0">
-                      Have a <span class="fs-1 fw-bolder">Question</span> About
-                      Your Case?
+                    <p class="fw-bold px-sm-3 px-4 lh-sm mb-sm-0 mb-2">
+                      Have a <span class="fw-bolder">Question</span> About Your
+                      Case?
                     </p>
                   </div>
                 </div>
                 <!-- question end -->
                 <!-- middle part start -->
                 <div class="middle-part px-4">
-                  <p class="paragraph fs-6 mb-1">
+                  <p class="paragraph mb-1">
                     Enter your information and get your questions answered
                     quickly and discreetly or call us at:
                     <span class="fw-bolder">540.433.6906</span>
                   </p>
-                  <div class="form-area py-1 d-grid gap-2">
-                    <div class="form-group p-0 text-end">
+                  <div
+                    class="form-area py-lg-1 d-flex justify-content-sm-start align-items-center flex-sm-row flex-column gap-lg-1 gap-md-4 gap-sm-0 gap-2 py-md-3"
+                  >
+                    <div class="form-group p-0 text-sm-end text-center">
                       <div
                         class="d-inline-flex justify-content-end align-items-center mb-1"
                       >
-                        <label for="name">NAME:</label>
-                        <input type="text" id="name" autocomplete="off" />
+                        <label class="fw-bold" for="name">NAME:</label>
+                        <input type="text" id="name" />
                       </div>
                       <div
                         class="d-inline-flex justify-content-end align-items-center mb-1"
                       >
-                        <label for="email">EMAIL:</label>
-                        <input type="email" id="email" autocomplete="off" />
+                        <label class="fw-bold" for="email">EMAIL:</label>
+                        <input type="email" id="email" />
                       </div>
                       <div
                         class="d-inline-flex justify-content-end align-items-center"
                       >
-                        <label for="phone">PHONE:</label>
-                        <input type="number" id="phone" autocomplete="off" />
+                        <label class="fw-bold" for="phone">PHONE:</label>
+                        <input type="number" id="phone" />
                       </div>
                     </div>
                     <div
-                      class="confidential-img d-flex justify-content-center align-items-center p-1"
+                      class="confidential-img p-1 d-flex justify-content-center align-items-center"
                     >
-                      <img class="" src="images/confidential.png" alt="" />
+                      <img
+                        class="img-fluid"
+                        src="images/confidential.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <textarea
@@ -141,13 +148,13 @@
                 </div>
                 <!-- bottom part start -->
                 <div
-                  class="bottom-part d-flex align-items-center justify-content-between px-4 pb-2"
+                  class="bottom-part d-flex align-items-center justify-content-between flex-sm-row flex-column px-4 pb-2"
                 >
                   <div class="guarantee-text">
                     <p class="mb-0 fst-italic">100% Privacy Guaranteed</p>
                   </div>
                   <div>
-                    <button class="guarantee-btn fs-6" type="submit">
+                    <button class="guarantee-btn" type="submit">
                       Ask Us About Your Case
                       <img src="images/bullet_white.gif" alt="bullet_white" />
                     </button>
@@ -163,20 +170,22 @@
     </main>
     <!-- showcase section -->
     <section class="section-show container mt-5 mb-3">
-      <div class="row">
+      <div
+        class="row row-cols-xl-3 row-cols-lg-2 row-cols-sm-1 row-cols-1 gy-lg-5 gy-sm-5 gy-5 row-gap-lg-4"
+      >
         <!-- box 1 -->
         <div class="col">
-          <div class="">
-            <h2 class="main-heading fs-4 fw-bolder mb-1">
+          <div class="px-lg-2">
+            <h2 class="main-heading fw-bolder mb-1">
               CHARGED WITH <span>DUI?</span>
             </h2>
-            <p class="sub-heading fs-6 fw-bold">FREE CASE EVALUATION</p>
+            <p class="sub-heading fw-bold">FREE CASE EVALUATION</p>
             <!-- content -->
             <div
-              class="content d-flex justify-content-center align-items-start mb-3"
+              class="content d-flex justify-content-center align-items-start justify-content-md-between mb-3 gap-md-4"
             >
-              <div class="fs-6 pe-3">
-                <p class="paragraph mb-3 lh-sm">
+              <div class="fs-6 pe-3 mt-sm-4">
+                <p class="paragraph lh-sm">
                   Being charged with a DUI can be scary. Get the help you
                   deserve.
                 </p>
@@ -197,17 +206,18 @@
             </div>
           </div>
         </div>
-        <div class="col-5 px-0 border-start border-end">
+        <!-- box 2 -->
+        <div class="col--sm-5 px-0 border-start border-end">
           <!-- box 2 top  -->
           <div class="px-3 border-bottom">
             <div
-              class="box-2--top d-flex justify-content-center align-items-center mb-2"
+              class="box-2--top d-flex justify-content-lg-center justify-content-md-between align-items-center mb-2"
             >
               <div class="pe-3">
-                <h2 class="main-heading fs-4 fw-bolder mb-2">
+                <h2 class="main-heading fw-bolder mb-2">
                   LAW <span>BLOG</span>
                 </h2>
-                <p class="paragraph fs-6 lh-sm">
+                <p class="paragraph lh-sm">
                   Learn more about Virginia Traffic Laws.
                 </p>
                 <!-- button -->
@@ -215,7 +225,7 @@
                   class="container-button d-flex justify-content-end text-end"
                 >
                   <div class="button-show border-top">
-                    <button class="me-3 fs-6 px-3 py-1 text-center">
+                    <button class="me-3 px-3 py-1 text-center">
                       CLICK HERE
                       <img class="" src="images/bullet_white_lrg.png" alt="" />
                     </button>
@@ -232,13 +242,13 @@
           <!-- box 2 bottom -->
           <div class="px-3">
             <div
-              class="box-2--bottom d-flex justify-content-center align-items-center mt-2"
+              class="box-2--bottom d-flex justify-content-between align-items-center mt-2"
             >
               <div class="pe-3">
-                <h2 class="main-heading fs-4 fw-bolder mb-2">
+                <h2 class="main-heading fw-bolder mb-2">
                   CASE <span>RESULTS</span>
                 </h2>
-                <p class="paragraph fs-6 lh-sm">
+                <p class="paragraph lh-sm">
                   See how we help our clients. Read our latest case results.
                 </p>
                 <!-- button -->
@@ -246,7 +256,7 @@
                   class="container-button d-flex justify-content-end text-end"
                 >
                   <div class="button-show border-top">
-                    <button class="me-3 fs-6 px-3 py-1 text-center">
+                    <button class="me-3 px-3 py-1 text-center">
                       CLICK HERE
                       <img class="" src="images/bullet_white_lrg.png" alt="" />
                     </button>
@@ -261,15 +271,15 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col my-lg-0 mx-lg-auto">
           <div
-            class="certificates d-flex justify-content-around align-items-center"
+            class="certificates d-flex justify-content-around align-items-center mb-lg-2 mb-3"
           >
             <img src="images/avo_rating_large.gif" alt="" />
             <img src="images/national_college_large.gif" alt="" />
           </div>
           <div class="pe-3">
-            <h2 class="main-heading fs-4 fw-bolder mb-2">
+            <h2 class="main-heading fw-bolder mb-2">
               CERTIFICATES & <span>CREDENTIALS</span>
             </h2>
             <p class="paragraph fs-6 lh-sm">
@@ -294,212 +304,189 @@
       <img src="images/hr_shadow.png" class="img-fluid" alt="" />
     </section>
     <!-- article area -->
-    <section class="container">
-      <div class="row mt-3">
-        <div class="col-3">
-          <aside>
-            <div class="menu-top">
-              <h2 class="main-heading fs-4 fw-bolder">
-                PRACTICE <span>AREAS</span>
-              </h2>
-              <div class="parent ps-3">
-                <!-- menu link 1 start -->
-                <div
-                  class="menu-link bg-info d-flex justify-content-start mb-3"
-                >
-                  <img class="image" src="images/menu_bg.gif" alt="" />
+    <section class="section-article container">
+      <div class="testimonial-section d-grid mt-3 gap-lg-3 gap-md-4">
+        <aside class="menu-cont">
+          <div class="menu-top">
+            <h2 class="main-heading fs-4 fw-bolder">
+              PRACTICE <span>AREAS</span>
+            </h2>
+            <div class="parent ps-3">
+              <!-- menu link 1 start -->
+              <div class="menu-link bg-info d-flex justify-content-start mb-3">
+                <img class="image" src="images/menu_bg.gif" alt="" />
 
-                  <div class="link-content px-2 py-2">
-                    <h3 class="fs-5 fw-bolder">DUI & DWI</h3>
-                    <div class="link text-end">
-                      <a class="fs-6" href="#"
-                        >LEARN MORE <img src="images/bullet_red.gif" alt=""
-                      /></a>
-                    </div>
+                <div class="link-content px-2 py-2">
+                  <h3 class="fs-5 fw-bolder">DUI & DWI</h3>
+                  <div class="link text-end">
+                    <a class="fs-6" href="#"
+                      >LEARN MORE <img src="images/bullet_red.gif" alt=""
+                    /></a>
                   </div>
                 </div>
-                <!-- menu link 1 end -->
-                <!-- menu link 2 start -->
-                <div
-                  class="menu-link bg-info d-flex justify-content-start mb-3"
-                >
-                  <img class="image" src="images/menu_bg.gif" alt="" />
-
-                  <div class="link-content px-2 py-2">
-                    <h3 class="fs-5 fw-bolder">RECKLESS DRIVING</h3>
-                    <div class="link text-end">
-                      <a class="fs-6" href="#"
-                        >LEARN MORE <img src="images/bullet_red.gif" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- menu link 2 end -->
-                <!-- menu link 3 start -->
-                <div
-                  class="menu-link bg-info d-flex justify-content-start mb-3"
-                >
-                  <img class="image" src="images/menu_bg.gif" alt="" />
-
-                  <div class="link-content px-2 py-2">
-                    <h3 class="fs-5 fw-bolder">SPEEDING TICKETS</h3>
-                    <div class="link text-end">
-                      <a class="fs-6" href="#"
-                        >LEARN MORE <img src="images/bullet_red.gif" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- menu link 3 end -->
-                <!-- menu link 4 start -->
-                <div
-                  class="menu-link bg-info d-flex justify-content-start mb-3"
-                >
-                  <img class="image" src="images/menu_bg.gif" alt="" />
-
-                  <div class="link-content px-2 py-2">
-                    <h3 class="fs-5 fw-bolder">TRAFFIC VIOLATIONS</h3>
-                    <div class="link text-end">
-                      <a class="fs-6" href="#"
-                        >LEARN MORE <img src="images/bullet_red.gif" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- menu link 4 end -->
               </div>
-            </div>
+              <!-- menu link 1 end -->
+              <!-- menu link 2 start -->
+              <div class="menu-link bg-info d-flex justify-content-start mb-3">
+                <img class="image" src="images/menu_bg.gif" alt="" />
 
-            <div class="menu-bottom mt-5">
-              <h2 class="main-heading fs-4 fw-bolder">
-                LEARN <span>MORE</span> ABOUT
-              </h2>
-              <div class="draft mt-5">
-                <ul class="fs-3 text-center fw-bolder">
-                  <li>MENU</li>
-                  <li>AREA</li>
-                  <li>HERE</li>
-                </ul>
+                <div class="link-content px-2 py-2">
+                  <h3 class="fs-5 fw-bolder">RECKLESS DRIVING</h3>
+                  <div class="link text-end">
+                    <a class="fs-6" href="#"
+                      >LEARN MORE <img src="images/bullet_red.gif" alt=""
+                    /></a>
+                  </div>
+                </div>
               </div>
+              <!-- menu link 2 end -->
+              <!-- menu link 3 start -->
+              <div class="menu-link bg-info d-flex justify-content-start mb-3">
+                <img class="image" src="images/menu_bg.gif" alt="" />
+
+                <div class="link-content px-2 py-2">
+                  <h3 class="fs-5 fw-bolder">SPEEDING TICKETS</h3>
+                  <div class="link text-end">
+                    <a class="fs-6" href="#"
+                      >LEARN MORE <img src="images/bullet_red.gif" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- menu link 3 end -->
+              <!-- menu link 4 start -->
+              <div class="menu-link bg-info d-flex justify-content-start mb-3">
+                <img class="image" src="images/menu_bg.gif" alt="" />
+
+                <div class="link-content px-2 py-2">
+                  <h3 class="fs-5 fw-bolder">TRAFFIC VIOLATIONS</h3>
+                  <div class="link text-end">
+                    <a class="fs-6" href="#"
+                      >LEARN MORE <img src="images/bullet_red.gif" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- menu link 4 end -->
             </div>
-          </aside>
-        </div>
-        <div class="col-6">
-          <div class="middle-content">
-            <h1 class="fs-3 fw-bolder">&lt;H1&gt;PAGE TITLE HERE</h1>
-            <p class="lh-sm fs-6">
-              Asunt in anim uis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in anim id est laborum.
-              Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in anim id est laborum.
-              Asunt in anim uis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in anim id est laborum.
-              Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt anim id est laborum.
-            </p>
           </div>
-        </div>
-        <div class="col-3">
-          <aside class="testimonial">
-            <div class="testimonial-reviews">
-              <!-- 1 -->
-              <div class="review mb-4">
-                <div class="review-content px-2">
-                  <h2 class="main-heading fs-4 fw-bolder">
-                    CLIENT <span>TESTIMONIALS</span>
-                  </h2>
-                  <p>Read what others say about Keefer Law Firm</p>
-                </div>
-                <!-- button  -->
-                <div
-                  class="container-button d-flex justify-content-end text-end"
-                >
-                  <div class="button-show border-top">
-                    <button class="me-3 fs-6 px-3 py-1 text-center">
-                      CLICK HERE
-                      <img class="" src="images/bullet_white_lrg.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- 2 -->
-              <div class="review mb-4">
-                <div class="review-content px-2">
-                  <h2 class="main-heading fs-4 fw-bolder">
-                    DOWNLOAD <span>FREE</span> REPORTS
-                  </h2>
-                  <p>Discover the truth about Virginia Law.</p>
-                </div>
-                <!-- button  -->
-                <div
-                  class="container-button d-flex justify-content-end text-end"
-                >
-                  <div class="button-show border-top">
-                    <button class="me-3 fs-6 px-3 py-1 text-center">
-                      CLICK HERE
-                      <img class="" src="images/bullet_white_lrg.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- 3 -->
-              <div class="review mb-4">
-                <div class="review-content px-2">
-                  <h2 class="main-heading fs-4 fw-bolder">
-                    CONTACT <span>OUR</span> OFFICES
-                  </h2>
-                  <p>Get your questions answered right now.</p>
-                </div>
-                <!-- button  -->
-                <div
-                  class="container-button d-flex justify-content-end text-end"
-                >
-                  <div class="button-show border-top">
-                    <button class="me-3 fs-6 px-3 py-1 text-center">
-                      CLICK HERE
-                      <img class="" src="images/bullet_white_lrg.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
+          <div class="menu-bottom mt-lg-3 mt-md-0">
+            <h2 class="main-heading fs-4 fw-bolder">
+              LEARN <span>MORE</span> ABOUT
+            </h2>
+            <div class="draft mt-5">
+              <ul class="fs-3 text-center fw-bolder">
+                <li>MENU</li>
+                <li>AREA</li>
+                <li>HERE</li>
+              </ul>
             </div>
-            <div class="testimonial-bottom">
-              <!-- certificate images -->
-              <div
-                class="d-flex justify-content-center align-items-center flex-column gap-4 my-4"
-              >
-                <img
-                  class="certificate-image"
-                  src="images/avo_rating_large.gif"
-                  alt=""
-                />
-                <img
-                  class="certificate-image"
-                  src="images/national_college_large.gif"
-                  alt=""
-                />
-              </div>
-              <!-- social links -->
-              <div class="social-links my-3">
-                <h2
-                  class="main-heading fs-4 fw-bolder border-bottom text-center"
-                >
-                  FOLLOW <span>US</span>
+          </div>
+        </aside>
+        <div class="middle-content">
+          <h1 class="fs-3 fw-bolder">&lt;H1&gt;PAGE TITLE HERE</h1>
+          <p class="lh-sm fs-6">
+            Asunt in anim uis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in anim id est laborum.
+            Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in anim id est laborum. Asunt in anim
+            uis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in anim id est laborum. Allamco laboris nisi ut
+            aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt anim id est laborum.
+          </p>
+        </div>
+        <aside class="testimonial gap-sm-5">
+          <div class="testimonial-reviews">
+            <!-- 1 -->
+            <div class="review mb-4">
+              <div class="review-content px-2">
+                <h2 class="main-heading fs-4 fw-bolder">
+                  CLIENT <span>TESTIMONIALS</span>
                 </h2>
-                <div class="links text-center">
-                  <a href="#"><img src="images/fb_icon.gif" alt="" /></a>
-                  <a href="#"><img src="images/google_icon.gif" alt="" /></a>
-                  <a href="#"><img src="images/twitter_icon.gif" alt="" /></a>
-                  <a href="#"><img src="images/linked_icon.gif" alt="" /></a>
+                <p>Read what others say about Keefer Law Firm</p>
+              </div>
+              <!-- button  -->
+              <div class="container-button d-flex justify-content-end text-end">
+                <div class="button-show border-top">
+                  <button class="me-3 fs-6 px-3 py-1 text-center">
+                    CLICK HERE
+                    <img class="" src="images/bullet_white_lrg.png" alt="" />
+                  </button>
                 </div>
               </div>
             </div>
-          </aside>
-        </div>
+            <!-- 2 -->
+            <div class="review mb-4">
+              <div class="review-content px-2">
+                <h2 class="main-heading fs-4 fw-bolder">
+                  DOWNLOAD <span>FREE</span> REPORTS
+                </h2>
+                <p>Discover the truth about Virginia Law.</p>
+              </div>
+              <!-- button  -->
+              <div class="container-button d-flex justify-content-end text-end">
+                <div class="button-show border-top">
+                  <button class="me-3 fs-6 px-3 py-1 text-center">
+                    CLICK HERE
+                    <img class="" src="images/bullet_white_lrg.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="review mb-4">
+              <div class="review-content px-2">
+                <h2 class="main-heading fs-4 fw-bolder">
+                  CONTACT <span>OUR</span> OFFICES
+                </h2>
+                <p>Get your questions answered right now.</p>
+              </div>
+              <!-- button  -->
+              <div class="container-button d-flex justify-content-end text-end">
+                <div class="button-show border-top">
+                  <button class="me-3 fs-6 px-3 py-1 text-center">
+                    CLICK HERE
+                    <img class="" src="images/bullet_white_lrg.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-bottom">
+            <!-- certificate images -->
+            <div
+              class="bottom-certificates d-flex justify-content-center align-items-center flex-column gap-4 my-4 my-md-0"
+            >
+              <img
+                class="certificate-image"
+                src="images/avo_rating_large.gif"
+                alt=""
+              />
+              <img
+                class="certificate-image"
+                src="images/national_college_large.gif"
+                alt=""
+              />
+            </div>
+            <!-- social links -->
+            <div class="social-links my-3">
+              <h2 class="main-heading fs-4 fw-bolder border-bottom text-center">
+                FOLLOW <span>US</span>
+              </h2>
+              <div class="links text-center">
+                <a href="#"><img src="images/fb_icon.gif" alt="" /></a>
+                <a href="#"><img src="images/google_icon.gif" alt="" /></a>
+                <a href="#"><img src="images/twitter_icon.gif" alt="" /></a>
+                <a href="#"><img src="images/linked_icon.gif" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 

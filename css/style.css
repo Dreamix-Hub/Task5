@@ -26,13 +26,10 @@ html {
 }
 
 .number {
-    letter-spacing: 1px;
     color: var(--black);
 }
 
 .get-answer {
-    font-size: .85rem;
-    letter-spacing: .5px;
     color: var(--border-color);
 }
 
@@ -44,10 +41,6 @@ html {
 
         & li {
             padding: .3rem .7rem !important;
-        }
-
-        & li:nth-child(1) {
-            background-color: var(--btn-active);
         }
     }
 }
@@ -74,7 +67,6 @@ html {
 
 .question-left p {
     background-color: var(--btn-color);
-    display: inline-block;
     color: var(--nav-link);
 }
 
@@ -86,30 +78,19 @@ html {
     color: #000;
 }
 
-label {
-    font-size: .8rem !important;
-    font-weight: 600;
-}
-
 input,
 textarea {
     outline: none;
 }
 
+input {
+    height: 1.5rem;
+}
+
 .confidential-img img {
     rotate: 6deg;
-    width: 100%;
-    height: auto;
 }
 
-.form-area {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-textarea {
-    width: 100%;
-    height: 5rem;
-}
 
 .guarantee-text {
     color: var(--border-color);
@@ -129,6 +110,12 @@ button {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+
+.hero-boxes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 350px;
+}
+
 .main-heading {
     color: var(--border-color);
 
@@ -145,9 +132,9 @@ button {
     color: var(--border-color);
 }
 
-.content img {
-    width: 75%;
-    height: auto;
+textarea {
+    width: 100%;
+    height: 5rem;
 }
 
 .button-show {
@@ -159,21 +146,12 @@ button {
 .button-show button {
     background-color: var(--btn-color);
     color: var(--nav-link);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
     &>img {
         width: auto;
         height: auto;
     }
-}
-
-.box-2--top---img {
-    width: 45%;
-    height: auto;
-}
-
-.box-2--bottom---img {
-    width: 70%;
-    height: auto;
 }
 
 :is(.box-2--top, .box-2--bottom) .button-show {
@@ -191,6 +169,7 @@ button {
     width: 100%;
     color: var(--nav-link);
     background-color: #838383;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     & a {
         text-decoration: none;
@@ -218,10 +197,22 @@ button {
     line-height: 1.2rem !important;
 }
 
+.middle-content p {
+    text-align: justify;
+}
+
 .review .container-button .button-show {
     width: 100%;
 }
 
 .social-links .border-bottom {
     border-width: 2px !important;
+}
+
+.links a>img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.testimonial-section {
+    grid-template-columns: 25% 55% 20%;
 }
